@@ -22,8 +22,8 @@ import edu.ucsd.cse232b_m1.parsers.XPathGrammarParser;
 public class main {
 	public static void main(String[] args) {
         try {
-            String inputFilename = args[1];
-            String outputFilename = args[2];
+            String inputFilename = args[0];
+            String outputFilename = args[1];
             CharStream codePointCharStream = CharStreams.fromFileName(inputFilename);
             XPathGrammarLexer lexer = new XPathGrammarLexer(codePointCharStream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
