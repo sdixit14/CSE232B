@@ -42,7 +42,7 @@ public class XQuery {
             }
             else{
                 System.out.println(results.size());
-                finalResult = makeElem(visitor.outputDoc, "RESULT", results);
+                finalResult = makeElem(visitor.outputDoc, "result", results);
             }
             writeToFile(visitor.outputDoc, finalResult, outputFilename);
 
