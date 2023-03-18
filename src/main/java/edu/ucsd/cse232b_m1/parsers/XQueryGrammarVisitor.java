@@ -76,12 +76,25 @@ public interface XQueryGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBraceXQ(XQueryGrammarParser.BraceXQContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code joinXQ}
+	 * labeled alternative in {@link XQueryGrammarParser#xq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitJoinXQ(XQueryGrammarParser.JoinXQContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code doubleSlashXQ}
 	 * labeled alternative in {@link XQueryGrammarParser#xq}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitDoubleSlashXQ(XQueryGrammarParser.DoubleSlashXQContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link XQueryGrammarParser#joinClause}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitJoinClause(XQueryGrammarParser.JoinClauseContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link XQueryGrammarParser#forClause}.
 	 * @param ctx the parse tree
@@ -106,6 +119,27 @@ public interface XQueryGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitReturnClause(XQueryGrammarParser.ReturnClauseContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code tagReturn}
+	 * labeled alternative in {@link XQueryGrammarParser#rt}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTagReturn(XQueryGrammarParser.TagReturnContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code xqReturn}
+	 * labeled alternative in {@link XQueryGrammarParser#rt}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitXqReturn(XQueryGrammarParser.XqReturnContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code commaReturn}
+	 * labeled alternative in {@link XQueryGrammarParser#rt}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCommaReturn(XQueryGrammarParser.CommaReturnContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code braceCond}
 	 * labeled alternative in {@link XQueryGrammarParser#cond}.
@@ -180,6 +214,12 @@ public interface XQueryGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitVar(XQueryGrammarParser.VarContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link XQueryGrammarParser#idList}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdList(XQueryGrammarParser.IdListContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code doubleAP}
 	 * labeled alternative in {@link XQueryGrammarParser#ap}.

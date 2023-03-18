@@ -126,6 +126,18 @@ public class XQueryGrammarBaseListener implements XQueryGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterJoinXQ(XQueryGrammarParser.JoinXQContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitJoinXQ(XQueryGrammarParser.JoinXQContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterDoubleSlashXQ(XQueryGrammarParser.DoubleSlashXQContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -133,6 +145,18 @@ public class XQueryGrammarBaseListener implements XQueryGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDoubleSlashXQ(XQueryGrammarParser.DoubleSlashXQContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterJoinClause(XQueryGrammarParser.JoinClauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitJoinClause(XQueryGrammarParser.JoinClauseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -181,6 +205,42 @@ public class XQueryGrammarBaseListener implements XQueryGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitReturnClause(XQueryGrammarParser.ReturnClauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTagReturn(XQueryGrammarParser.TagReturnContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTagReturn(XQueryGrammarParser.TagReturnContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterXqReturn(XQueryGrammarParser.XqReturnContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXqReturn(XQueryGrammarParser.XqReturnContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCommaReturn(XQueryGrammarParser.CommaReturnContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCommaReturn(XQueryGrammarParser.CommaReturnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -313,6 +373,18 @@ public class XQueryGrammarBaseListener implements XQueryGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitVar(XQueryGrammarParser.VarContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIdList(XQueryGrammarParser.IdListContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIdList(XQueryGrammarParser.IdListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
